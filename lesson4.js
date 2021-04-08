@@ -93,7 +93,7 @@ let students = [
 ];
 console.log(students.reduce((acc, el) => acc + el.scores, 0))
 console.log(students.reduce((acc, el) => {
-    acc.push(...el, scores: el.scores + 100)
+    acc.push({...el, scores: el.scores + 100})
     return acc
 }, []))
 
